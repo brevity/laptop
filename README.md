@@ -1,4 +1,5 @@
 Laptop
+
 ======
 
 Laptop is a script to set up an macOS laptop for web development.
@@ -25,14 +26,14 @@ Install
 Download, review, then execute the script:
 
 ```sh
-curl --remote-name https://raw.githubusercontent.com/thoughtbot/laptop/master/mac
+curl --remote-name https://raw.githubusercontent.com/brevity/laptop/master/mac
 less mac
 sh mac 2>&1 | tee ~/laptop.log
 ```
 
-Optionally, [install thoughtbot/dotfiles][dotfiles].
+Optionally, [install brevity/dotfiles][dotfiles].
 
-[dotfiles]: https://github.com/thoughtbot/dotfiles#install
+[dotfiles]: https://github.com/brevity/dotfiles#install
 
 Debugging
 ---------
@@ -40,7 +41,7 @@ Debugging
 Your last Laptop run will be saved to `~/laptop.log`.
 Read through it to see if you can debug the issue yourself.
 If not, copy the lines where the script failed into a
-[new GitHub Issue](https://github.com/thoughtbot/laptop/issues/new) for us.
+[new GitHub Issue](https://github.com/brevity/laptop/issues/new) for us.
 Or, attach the whole log file as an attachment.
 
 What it sets up
@@ -54,28 +55,25 @@ macOS tools:
 
 Unix tools:
 
-* [Exuberant Ctags] for indexing files for vim tab completion
 * [Git] for version control
 * [OpenSSL] for Transport Layer Security (TLS)
 * [RCM] for managing company and personal dotfiles
-* [The Silver Searcher] for finding things in files
+* ~~[The Silver Searcher] for finding things in files~~
 * [Tmux] for saving project state and switching between projects
 * [Zsh] as your shell
 
-[Exuberant Ctags]: http://ctags.sourceforge.net/
 [Git]: https://git-scm.com/
 [OpenSSL]: https://www.openssl.org/
-[RCM]: https://github.com/thoughtbot/rcm
-[The Silver Searcher]: https://github.com/ggreer/the_silver_searcher
+[RCM]: https://github.com/brevity/rcm
 [Tmux]: http://tmux.github.io/
 [Zsh]: http://www.zsh.org/
+[Fish]: https://fishshell.com/
 
 Heroku tools:
 
-* [Heroku Toolbelt] and [Parity] for interacting with the Heroku API
+* [Heroku Toolbelt] for interacting with the Heroku API
 
 [Heroku Toolbelt]: https://toolbelt.heroku.com/
-[Parity]: https://github.com/thoughtbot/parity
 
 GitHub tools:
 
@@ -89,29 +87,17 @@ Image tools:
 
 Testing tools:
 
-* [Qt] for headless JavaScript testing via Capybara Webkit
-
-[Qt]: http://qt-project.org/
 
 Programming languages and configuration:
 
-* [Bundler] for managing Ruby libraries
 * [Node.js] and [NPM], for running apps and installing JavaScript packages
-* [Rbenv] for managing versions of Ruby
-* [Ruby Build] for installing Rubies
-* [Ruby] stable for writing general-purpose code
 
-[Bundler]: http://bundler.io/
-[ImageMagick]: http://www.imagemagick.org/
 [Node.js]: http://nodejs.org/
 [NPM]: https://www.npmjs.org/
-[Rbenv]: https://github.com/sstephenson/rbenv
-[Ruby Build]: https://github.com/sstephenson/ruby-build
-[Ruby]: https://www.ruby-lang.org/en/
 
 Databases:
 
-* [Postgres] for storing relational data
+* [Mongodb] for storing  data
 * [Redis] for storing key-value data
 
 [Postgres]: http://www.postgresql.org/
@@ -131,7 +117,6 @@ For example:
 
 brew bundle --file=- <<EOF
 brew "Caskroom/cask/dockertoolbox"
-brew "go"
 brew "ngrok"
 brew "watch"
 EOF
@@ -169,8 +154,6 @@ Laptop functions such as `fancy_echo` and
 `gem_install_or_update`
 can be used in your `~/.laptop.local`.
 
-See the [wiki](https://github.com/thoughtbot/laptop/wiki)
-for more customization examples.
 
 Contributing
 ------------
@@ -179,42 +162,10 @@ Edit the `mac` file.
 Document in the `README.md` file.
 Follow shell style guidelines by using [ShellCheck] and [Syntastic].
 
-```sh
+```eh
 brew install shellcheck
 ```
 
 [ShellCheck]: http://www.shellcheck.net/about.html
 [Syntastic]: https://github.com/scrooloose/syntastic
 
-Thank you, [contributors]!
-
-[contributors]: https://github.com/thoughtbot/laptop/graphs/contributors
-
-By participating in this project,
-you agree to abide by the thoughtbot [code of conduct].
-
-[code of conduct]: https://thoughtbot.com/open-source-code-of-conduct
-
-License
--------
-
-Laptop is © 2011-2017 thoughtbot, inc.
-It is free software,
-and may be redistributed under the terms specified in the [LICENSE] file.
-
-[LICENSE]: LICENSE
-
-About thoughtbot
-----------------
-
-![thoughtbot](https://thoughtbot.com/logo.png)
-
-Laptop is maintained and funded by thoughtbot, inc.
-The names and logos for thoughtbot are trademarks of thoughtbot, inc.
-
-We are passionate about open source software.
-See [our other projects][community].
-We are [available for hire][hire].
-
-[community]: https://thoughtbot.com/community?utm_source=github
-[hire]: https://thoughtbot.com?utm_source=github
