@@ -55,6 +55,7 @@ macOS tools:
 
 Unix tools:
 
+* ~~[Exuberant Ctags] for indexing files for vim tab completion~~
 * [Git] for version control
 * [OpenSSL] for Transport Layer Security (TLS)
 * [RCM] for managing company and personal dotfiles
@@ -62,9 +63,11 @@ Unix tools:
 * [Tmux] for saving project state and switching between projects
 * [Zsh] as your shell
 
+[Exuberant Ctags]: http://ctags.sourceforge.net/
 [Git]: https://git-scm.com/
 [OpenSSL]: https://www.openssl.org/
-[RCM]: https://github.com/brevity/rcm
+[RCM]: https://github.com/thoughtbot/rcm
+[The Silver Searcher]: https://github.com/ggreer/the_silver_searcher
 [Tmux]: http://tmux.github.io/
 [Zsh]: http://www.zsh.org/
 [Fish]: https://fishshell.com/
@@ -97,6 +100,7 @@ Programming languages and configuration:
 
 Databases:
 
+* ~~[Postgres] for storing relational data~~
 * [Mongodb] for storing  data
 * [Redis] for storing key-value data
 
@@ -117,6 +121,7 @@ For example:
 
 brew bundle --file=- <<EOF
 brew "Caskroom/cask/dockertoolbox"
+brew "go"
 brew "ngrok"
 brew "watch"
 EOF
@@ -162,10 +167,15 @@ Edit the `mac` file.
 Document in the `README.md` file.
 Follow shell style guidelines by using [ShellCheck] and [Syntastic].
 
-```eh
+```sh
 brew install shellcheck
 ```
 
 [ShellCheck]: http://www.shellcheck.net/about.html
 [Syntastic]: https://github.com/scrooloose/syntastic
 
+Thank you, [contributors] to the [Thoughtbot laptop project]!
+
+
+[contributors]: https://github.com/thoughtbot/laptop/graphs/contributors
+[Thoughtbot laptop project]: https://github.com/thoughtbot/laptop
