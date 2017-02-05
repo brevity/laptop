@@ -78,6 +78,12 @@ Heroku tools:
 
 [Heroku Toolbelt]: https://toolbelt.heroku.com/
 
+AWS tools:
+
+* [AWS CLI] for interacting with the AWS API
+
+[ASW CLI]: https://aws.amazon.com/cli/
+
 GitHub tools:
 
 * [Hub] for interacting with the GitHub API
@@ -179,3 +185,4 @@ Thank you, [contributors] to the [Thoughtbot laptop project]!
 
 [contributors]: https://github.com/thoughtbot/laptop/graphs/contributors
 [Thoughtbot laptop project]: https://github.com/thoughtbot/laptop
+

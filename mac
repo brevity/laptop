@@ -112,6 +112,13 @@ brew "vim"
 brew "zsh"
 brew "fish"
 
+
+# Docker
+brew "Caskroom/cask/virtualbox"
+brew "Caskroom/cask/virtualbox-extension-pack"
+
+
+
 # Heroku
 brew "heroku-toolbelt"
 
@@ -154,6 +161,15 @@ EOF
 # gem_install_or_update 'bundler'
 # number_of_cores=$(sysctl -n hw.ncpu)
 # bundle config --global jobs $((number_of_cores - 1))
+
+# Configure... Node 
+fancy_echo "Configuring Node ..."
+# Don't think I need these mods to /usr/local in the laptop installation context
+# sudo chmod g+w /usr/local
+# sudo chgrp staff /usr/local
+npm install -g tj/n
+n latest
+n lts
 
 
 
