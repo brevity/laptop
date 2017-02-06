@@ -1,5 +1,4 @@
 Laptop
-
 ======
 
 Laptop is a script to set up an macOS laptop for web development.
