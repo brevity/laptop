@@ -82,7 +82,7 @@ AWS tools:
 
 * [AWS CLI] for interacting with the AWS API
 
-[ASW CLI]: https://aws.amazon.com/cli/
+[AWS CLI]: https://aws.amazon.com/cli/
 
 GitHub tools:
 
